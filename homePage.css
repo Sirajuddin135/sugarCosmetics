@@ -1,0 +1,358 @@
+body{
+    background-color: rgb(246, 246, 245);
+}
+.slideshow-container {
+max-width: 100%;
+position: relative;
+margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 10px;
+width: 10px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+#referal{
+    margin: 0 0 8px;
+    font-size: 20px;
+    color: black;
+}
+
+div > h2{
+    text-align: center;
+    font-size: 32px;
+    color: #1f1f1f;
+}
+
+#refer-img{
+    width: 95%;
+    margin: auto;
+}
+
+#refer-img > img{
+    height: 300px;
+    width: 100%;
+}
+#video{
+    margin: auto;
+    width: 80%;
+}
+#bestseller-container{
+    width: 70%;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+#bestseller-container > div{
+    /* border: 1px solid teal; */
+    background-color: white;
+}
+
+.prodImg{
+    width: 60%;
+    margin: auto;
+    /* border: 1px solid blue; */
+}
+
+.prodImg>img{
+    width: 100%;
+    height: auto;
+}
+
+.bestseller-tag{
+    text-align: center;
+    font-size: 16px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 40px;
+}
+
+#beautyTips{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+.quickSlide{
+    display: block;
+}
+
+#hotDeal-conatiner{
+    width: 95%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 400px;
+    gap: 30px;
+    /* border: 1px solid red; */
+}
+#streaming-video{
+    max-width: 60%;
+    height: 380px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 400px;
+    gap: 20px; */
+    /* border: 1px solid blue; */
+}
+#streaming-video > div{
+    /* border: 1px solid teal; */
+    max-width: max-content;
+    transition: 1s;
+    margin: 0 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+iframe{
+    display: block;
+    width: 100%;
+    border-radius:10px;
+}
+#streaming-video > div:hover{
+    transform: scale(1.5);
+}
+#superSaver{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    /* border: 1px solid red; */
+}
+#superSaver > div{
+    /* border: 1px solid orchid; */
+    background-color: white;
+}
+.super{
+    width: 60%;
+    height: 70%;
+    /* border: 1px solid green; */
+    margin: auto;
+}
+.super > img{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+}
+#superSaver > div > div > p{
+    text-align: center;
+    font-size: bold;
+    /* margin-top: -2px; */
+
+}
+.super-priceTag{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+.super-priceTag > div:nth-child(1){
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+.super-priceTag > div:nth-child(2){
+    padding-right: 10px;
+}
+.super-priceTag > div:nth-child(3){
+    color: red;
+}
+#topPicks{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 400px;
+    gap: 30px;
+}
+#gifts{
+    width: 80%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    /* border: 1px solid red; */
+}
+#gifts > div{
+    /* border: 1px solid green; */
+    background-color: white;
+}
+.gift-img{
+    width: 100%;
+    /* height: 80%; */
+    /* border: 1px solid blue; */
+}
+.gift-img > img{
+    width: 55%;
+    padding-left: 20%;
+}
+.gift-tag{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    margin-bottom: 5px;
+}
+#gifts > div > p{
+    text-align: center;
+    font-size: bold;
+}
+
+.gift-tag > div:nth-child(1){
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+.gift-tag > div:nth-child(2){
+    padding-right: 10px;
+}
+.gift-tag > div:nth-child(3){
+    color: red;
+}
+#this-that{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+#just-in{
+    width: 70%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px;
+    gap: 30px;
+    /* border: 1px solid red;  */
+}
+#just-in > div{
+    /* border: 1px solid blue; */
+    background-color: white;
+}
+.newArrival > img{
+    width: 45%;
+    padding-left: 30%;
+}
+#just-in > div > p{
+    text-align: center;
+    font-size: bold;
+}
+.justIn-tag{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    margin-bottom: 5px;
+}
+.justIn-tag > div:nth-child(1){
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+.justIn-tag > div:nth-child(2){
+    padding-right: 10px;
+}
+.justIn-tag > div:nth-child(3){
+    color: red;
+}
+#beauty-blog{
+    width: 1005;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+#skinCare{
+    width: 70%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+    /* border: 1px solid red;  */
+}
+#skinCare > div{
+    /* border: 1px solid blue; */
+    background-color: white;
+}
+.skinProd-img > img{
+    width: 50%;
+    padding-left: 25%;
+}
+#skinCare >div > p{
+    text-align: center;
+    font-size: bolder;
+    margin-top: -5px;
+
+}
+#explore{
+    width: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px;
+    gap: 20px;
+}
+#explore > div > img{
+    width: 100%;
+}
+#read{
+    padding-left: 20%;
+    margin-top: 30px;
+}
