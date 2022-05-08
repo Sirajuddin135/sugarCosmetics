@@ -47,3 +47,29 @@ function showProd(n) {
   productSlides[prodIndex-1].style.display = "block";
   dots[prodIndex-1].className += " active";
 }
+
+// navbar.js part
+document.querySelector("#cross").addEventListener("click", myfunction);
+ function myfunction(){
+   
+    document.querySelector("#offertag").remove()
+    
+  
+ }
+
+//  bottomjs part
+   
+document.querySelector("button").addEventListener("click",redirect)
+function redirect(){
+    var mail=document.querySelector("#newsletter").value
+    if(mail==""){
+       
+
+    document.querySelector("#error").innerHTML="please enter valid email"
+   
+    var delay= 2000
+    setTimeout(function(){
+ window.location.reload()
+    },delay)
+    }
+}
