@@ -47,6 +47,7 @@ width: 16.66666667%;
 height: 40.23px;
 display: flex;
 justify-content: center;
+/* border: 1px solid red; */
 }
 #searchbar{
   width: 50%;
@@ -142,6 +143,7 @@ align-items: center;
   display: flex;
   width: 100%;
   height: 51.5px;
+  background-color: white;
   
 }
 .dropdown{
@@ -171,12 +173,13 @@ width: 15%;
 
 
 
+
 }
 
 .dropdown>li:hover .sub-menu{
   display: block;
   position: absolute;
-  
+  background-color: white;
 }
 
 #sub-nav a{
@@ -188,4 +191,9 @@ width: 15%;
 .sub-menu>a>p:hover{
   font-weight: bolder;
   text-align: end;
+}
+#container{
+  position: sticky;
+  top: 0px;
+
 }
