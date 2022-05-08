@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+    font-family: sans-serif;
+   
+}
+#main{
+   background-color: black;
+}
+#container{
+    width: 95%;
+   
+    margin: auto;
+    
+}
+#logo{
+    height: 120px;
+    width: 100%;
+   
+}
+#logo>div{
+    height:100%;
+    width: 120px;
+    margin: auto;
+   
+}
+#logo>div>img{
+    width: 100%;
+}
+#socialmedia{
+    width: 100%;
+    height: 27.06px;
+   
+}
+#socialmedia>div{
+    width: 30%;
+    height: 100%;
+   
+   margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+#socialmedia>div>div{
+   
+    height: 27.06px;
+    margin: auto;
+
+    
+  
+}
+#socialmedia>div>div>a>img{
+    width: 100%;
+    height: 100%;
+}
+svg{
+    font-size: 100px;
+    color: rgb(241, 234, 234);
+}
+#apps{
+    padding-top: 30px;
+    width: 100%;
+    height: 108px;
+   
+    display: flex;
+}
+#sub{
+    width: 50%;
+    height: 100%;
+  
+  
+}
+#getapps{
+    width: 50%;
+    height: 100%;
+   
+}
+.head_sub{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 25px;
+  
+}
+.head_sub>h5{
+    color: white;
+    font-size: 17px;
+}
+#newsletter_div{
+    display: flex;
+    width: 100%;
+    height: 60px;
+   
+}
+#newsletter{
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 50%;
+}
+#signup{
+    padding: 7px 15px;
+    margin-top: 20px;
+    border: 1px solid #fc2779;
+    background-color: #fc2779;
+    font-family: Poppins,sans-serif;
+    color: #fff;
+    border-radius: 0.25rem!important;
+}
+
+#playstore_div{
+    display: flex;
+    width: 100%;
+    height: 30px;
+}
+#text_div{
+    width: 43%;
+    color: rgb(153, 153, 153);
+}
+.playstore{
+    width: 16.66%;
+    height: 100%;
+    margin-right: 15px;
+}
+.playstore>a>img{
+    width: 100%;
+    height: 100%;
+}
+#informations{
+    margin-top: 25px;
+}
+#info_contents{
+    display: flex;
+}
+.contents>a{
+    text-decoration: none;
+    color: rgb(153, 153, 153);
+    margin-right: 120px;
+   
+}
+.contents>a:hover{
+    color: white;
+   
+    text-decoration: underline;
+
+}
+#get_in_touch{
+    margin-top: 25px;
+}
+#GTN{
+    height: 66px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.fstline{
+    display: flex;
+    color: #fff;
+    column-gap: 8px;
+    align-items: center;
+}
+.secndline>a{
+    text-decoration: none;
+    color: rgb(153, 153, 153);
+    
+}
+.thirdline{
+    color:  rgb(153, 153, 153);
+    font-size: 12px;
+}
+.secndline>a:hover{
+    color: white;
+   
+    text-decoration: underline;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#copyright{
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+#message{
+   width: 70%;
+}
+#error{
+color: #fc2779;
+margin-top: 5px;
+}
+
