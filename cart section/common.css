@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+#location {
+    margin: 10px 0px 0px 10px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+#location>a {
+    color: black;
+    text-decoration: none;
+}
+
+#location p {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+p>a {
+    text-decoration: none;
+    color: grey;
+}
