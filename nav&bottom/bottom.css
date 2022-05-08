@@ -3,35 +3,35 @@
     font-family: sans-serif;
    
 }
-#main{
+#main_footer{
    background-color: black;
 }
-#container{
+#container_footer{
     width: 95%;
    
     margin: auto;
     
 }
-#logo{
+#logo_footer{
     height: 120px;
     width: 100%;
    
 }
-#logo>div{
+#logo_footer>div{
     height:100%;
     width: 120px;
     margin: auto;
    
 }
-#logo>div>img{
+#logo_footer>div>img{
     width: 100%;
 }
-#socialmedia{
+#socialmedia_footer{
     width: 100%;
     height: 27.06px;
    
 }
-#socialmedia>div{
+#socialmedia_footer>div{
     width: 30%;
     height: 100%;
    
@@ -39,7 +39,7 @@
     display: grid;
     grid-template-columns: repeat(7,1fr);
 }
-#socialmedia>div>div{
+#socialmedia_footer>div>div{
    
     height: 27.06px;
     margin: auto;
@@ -47,7 +47,7 @@
     
   
 }
-#socialmedia>div>div>a>img{
+#socialmedia_footer>div>div>a>img{
     width: 100%;
     height: 100%;
 }
@@ -55,48 +55,48 @@ svg{
     font-size: 100px;
     color: rgb(241, 234, 234);
 }
-#apps{
+#apps_footer{
     padding-top: 30px;
     width: 100%;
     height: 108px;
    
     display: flex;
 }
-#sub{
+#sub_footer{
     width: 50%;
     height: 100%;
   
   
 }
-#getapps{
+#getapps_footer{
     width: 50%;
     height: 100%;
    
 }
-.head_sub{
+.head_sub_footer{
     width: 100%;
     height: 20px;
     margin-bottom: 25px;
   
 }
-.head_sub>h5{
+.head_sub_footer>h5{
     color: white;
     font-size: 17px;
 }
-#newsletter_div{
+#newsletter_div_footer{
     display: flex;
     width: 100%;
     height: 60px;
    
 }
-#newsletter{
+#newsletter_footer{
     outline: none;
     background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
     width: 50%;
 }
-#signup{
+#signup_footer{
     padding: 7px 15px;
     margin-top: 20px;
     border: 1px solid #fc2779;
@@ -106,68 +106,68 @@ svg{
     border-radius: 0.25rem!important;
 }
 
-#playstore_div{
+#playstore_div_footer{
     display: flex;
     width: 100%;
     height: 30px;
 }
-#text_div{
+#text_div_footer{
     width: 43%;
     color: rgb(153, 153, 153);
 }
-.playstore{
+.playstore_footer{
     width: 16.66%;
     height: 100%;
     margin-right: 15px;
 }
-.playstore>a>img{
+.playstore_footer>a>img{
     width: 100%;
     height: 100%;
 }
-#informations{
+#informations_footer{
     margin-top: 25px;
 }
-#info_contents{
+#info_contents_footer{
     display: flex;
 }
-.contents>a{
+.contents_footer>a{
     text-decoration: none;
     color: rgb(153, 153, 153);
     margin-right: 120px;
    
 }
-.contents>a:hover{
+.contents_footer>a:hover{
     color: white;
    
     text-decoration: underline;
 
 }
-#get_in_touch{
+#get_in_touch_footer{
     margin-top: 25px;
 }
-#GTN{
+#GTN_footer{
     height: 66px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 
 }
-.fstline{
+.fstline_footer{
     display: flex;
     color: #fff;
     column-gap: 8px;
     align-items: center;
 }
-.secndline>a{
+.secndline_footer>a{
     text-decoration: none;
     color: rgb(153, 153, 153);
     
 }
-.thirdline{
+.thirdline_footer{
     color:  rgb(153, 153, 153);
     font-size: 12px;
 }
-.secndline>a:hover{
+.secndline_footer>a:hover{
     color: white;
    
     text-decoration: underline;
@@ -176,16 +176,16 @@ hr{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#copyright{
+#copyright_footer{
     padding-bottom: 30px;
     color: white;
     text-align: center;
     font-size: 13px;
 }
-#message{
+#message_footer{
    width: 70%;
 }
-#error{
+#error_footer{
 color: #fc2779;
 margin-top: 5px;
 }
