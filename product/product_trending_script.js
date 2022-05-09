@@ -168,6 +168,9 @@ let card = [
 
 var product_cart = JSON.parse(localStorage.getItem("cart_item")) || [];
 
+
+var wish_list = JSON.parse(localStorage.getItem("wishItem"))||[];
+
 var arr = [];
 
 card.forEach(function(elem) {
@@ -209,7 +212,28 @@ card.forEach(function(elem) {
     image4.setAttribute("src", elem.imgUrl4);
     image4.style.height = "20px"
     image4.style.width = "20px"
-    image4.style.margin = "auto"
+    image4.style.margin = "auto";
+
+// function for add item into wish list  
+image4.addEventListener("click", function(){
+    var now = 0;
+    wish_list.forEach(function(i){
+        if(i.productName == elem.productName){
+            now = 1
+        }
+    })
+    if(now == 0){
+        wish_list.push(elem);
+        localStorage.setItem("wishItem", JSON.stringify(wish_list));
+       
+    }
+    else{
+        alert("You have already wishlisted this item");
+    }
+
+})
+
+
 
     var button = document.createElement("p")
     button.innerText = "Add to Cart";
@@ -219,6 +243,9 @@ card.forEach(function(elem) {
     button.style.padding = "10px";
     button.style.width = "80%";
     button.style.textAlign = "center";
+    
+    
+// function for add item into cart 
     button.addEventListener("click", function(){
         var present = 0;
         product_cart.forEach(function(item) {
