@@ -1,3 +1,12 @@
+//<!----------------------Navbar--------------------->
+
+document.querySelector("#cross").addEventListener("click", myfunction);
+function myfunction() {
+    document.querySelector("#offertag").remove();
+}
+
+//<!----------------------Body--------------------->
+
 var form = document.querySelector("form");
 var OTP = 13579;
 
@@ -31,4 +40,24 @@ document.querySelector("#otpSubmit").addEventListener("click", function () {
     else {
         alert("Wrong OTP");
     }
-})
+});
+
+//<!----------------------Footer--------------------->
+
+document.querySelector("button").addEventListener("click", redirect)
+
+function redirect() {
+    var mail = document.querySelector("#newsletter_footer").value
+    if (mail == "") {
+        var delay = 2000;
+
+        document.querySelector("#error_footer").innerHTML = "please enter valid email"
+
+        setTimeout(function () {
+            window.location.reload();
+        }, delay);
+    }
+    else {
+        window.location.href = "../login pages/login.html";
+    }
+}
