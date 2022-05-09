@@ -1,0 +1,37 @@
+#paymentSection {
+    width: 15%;
+    height: auto;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#paymentSection>div * {
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+
+#detailsSection,
+#completePayment {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+}
+
+#otpAlert,
+#otpSubmit {
+    padding: 5px;
+    color: white;
+    background-color: green;
+    border: 0px;
+    border-radius: 10px;
+    margin: auto;
+    cursor: pointer;
+}
+
+#completePayment {
+    margin: 10px auto;
+}
