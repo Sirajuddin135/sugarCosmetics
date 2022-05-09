@@ -37,7 +37,6 @@ if (items != 0) {
     items.forEach(function (elem, index) {
         // div to append data
         var item = document.createElement("div");
-        item.style.margin = "auto";
 
         // Product Image
         var image = document.createElement("img");
@@ -71,7 +70,7 @@ if (items != 0) {
         wishlist.addEventListener("click", function () {
             present = 0;
             wishlistItems.forEach(function (obj) {
-                if (obj.desc == elem.desc) {
+                if (obj.desc == elem.productName) {
                     present = 1;
                 }
             });
@@ -79,6 +78,7 @@ if (items != 0) {
             if (present == 0) {
                 wishlistItems.push(elem);
                 localStorage.setItem("wishItems", JSON.stringify(wishlistItems));
+                deleteItem(elem, index, arr);
             }
         });
 
@@ -144,6 +144,7 @@ if (items != 0) {
             localStorage.setItem("productCount", JSON.stringify(arr));
             window.location.reload();
         });
+
         // div2 to append counter
         var div2 = document.createElement("div");
         div2.append(decrement, count, increment);
@@ -162,7 +163,7 @@ if (items != 0) {
 
         present = 0;
         temp.forEach(function (obj) {
-            if (obj.desc == elem.desc) {
+            if (obj.desc == elem.productName) {
                 present = 1;
             }
         });
@@ -172,8 +173,8 @@ if (items != 0) {
             arr.push(counter);
             count.innerText = arr[index];
             localStorage.setItem("counter", JSON.stringify(counter));
-            temp.push(elem);
             item.append(image, div1, del, div2, amount);
+            temp.push(item);
             document.querySelector("#container1").append(item);
         }
     });

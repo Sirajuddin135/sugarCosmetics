@@ -8,7 +8,6 @@
 #emptyCart>img {
     display: block;
     width: 35%;
-    height: auto;
     margin: auto;
     margin-bottom: 15px;
 }
@@ -45,10 +44,6 @@ button>a {
     display: flex;
 }
 
-#order>img {
-    width: 15%;
-}
-
 #order>p {
     font-size: 15px;
 }
@@ -63,9 +58,7 @@ button>a {
 
 #container1 {
     width: 45%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
+    height: auto;
     gap: 20px;
     padding: 20px;
 }
