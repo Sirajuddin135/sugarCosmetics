@@ -18,16 +18,19 @@ userDetailArr.forEach(function (el) {
 //<!----------------------Footer--------------------->
 
 document.querySelector("button").addEventListener("click", redirect)
+
 function redirect() {
-    var mail = document.querySelector("#newsletter").value
+    var mail = document.querySelector("#newsletter_footer").value
     if (mail == "") {
+        var delay = 2000;
 
+        document.querySelector("#error_footer").innerHTML = "please enter valid email"
 
-        document.querySelector("#error").innerHTML = "please enter valid email"
-
-        var delay = 2000
         setTimeout(function () {
-            window.location.reload()
-        }, delay)
+            window.location.reload();
+        }, delay);
+    }
+    else {
+        window.location.href = "../login pages/login.html";
     }
 }
