@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUGAR Cosmetics - Wishlist</title>
+    <title>SUGAR Cosmetics - Payment Page</title>
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="wishlistPage.css">
+    <link rel="stylesheet" href="paymentPage.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,7 @@
 
 <body>
     <!----------------------Navbar--------------------->
+
     <div id="container">
         <div id="offertag">
             <div id="offertext"><a href="">
@@ -177,24 +178,20 @@
 
     <!----------------------Body--------------------->
 
-    <div id="location">
-        <a href=""><i class="fa-solid fa-house fa-2xs"></i></a>
-        <p>/</p>
-        <p><a href="">Account</a></p>
-        <p>/</p>
-        <p><a href="">Wishlist</a></p>
-    </div>
-
-    <div id="emptyWishlist">
-        <img src="https://in.sugarcosmetics.com/desc-images/WishlistEmpty.png" alt="">
-        <div id="content">
-            <p>Your wishlist is empty</p>
-            <p>Start shopping now</p>
-            <button><a href="">SHOP NOW</a></button>
+    <form>
+        <div id="paymentSection">
+            <div id="detailsSection">
+                <input id="cardNumber" type="number" placeholder="Enter 16 Digits Card Number">
+                <input id="cardName" type="text" placeholder="Enter Name">
+                <input id="cardCVV" type="number" placeholder="Enter CVV">
+                <input id="otpAlert" type="submit" value="Get OTP">
+            </div>
+            <div id="completePayment">
+                <input id="otpNumber" type="text" placeholder="Enter OTP" autocomplete="off">
+                <input id="otpSubmit" type="submit" value="Submit">
+            </div>
         </div>
-    </div>
-    <div id="cards"></div>
-
+    </form>
     <!----------------------Footer--------------------->
 
     <div id="main_footer">
@@ -325,6 +322,6 @@
     </div>
 
 </body>
-<script src="wishlistPage.js"></script>
+<script src="paymentPage.js"></script>
 
 </html>
