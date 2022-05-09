@@ -5,3 +5,13 @@ document.querySelector("#cross").addEventListener("click", myfunction);
     
   
  }
+ 
+    
+ 
+ var userDetailArr=JSON.parse(localStorage.getItem("userData"))
+ userDetailArr.forEach(function(el){
+    if(userDetailArr.length!=0){
+  document.querySelector('#loginanch').innerHTML="Hi,"+el.firstname
+
+    }
+ });
