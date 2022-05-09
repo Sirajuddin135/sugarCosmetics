@@ -60,7 +60,7 @@ if (items != 0) {
 
         //Shop Now
         var shop = document.createElement("a");
-        shop.setAttribute("href", "cart.html");
+        shop.setAttribute("href", "../homepage/homepage.html");
         shop.innerText = "SHOP NOW";
         shop.style.fontSize = "10px";
         shop.style.color = "white";
