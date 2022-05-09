@@ -19,7 +19,7 @@ userDetailArr.forEach(function (el) {
 
 var total = 0;
 
-var items = JSON.parse(localStorage.getItem("cartItems")) || [];
+var items = JSON.parse(localStorage.getItem("cart_item")) || [];
 
 var wishlistItems = JSON.parse(localStorage.getItem("wishItems")) || [];
 
@@ -41,12 +41,12 @@ if (items != 0) {
 
         // Product Image
         var image = document.createElement("img");
-        image.setAttribute("src", elem.image);
+        image.setAttribute("src", elem.imgUrl2);
         image.style.height = "80px";
 
         // Product description
         var desc = document.createElement("h6");
-        desc.innerText = elem.desc;
+        desc.innerText = elem.productName;
         desc.style.textTransform = "uppercase";
         desc.style.lineHeight = "20px";
         desc.style.fontFamily = "sanSerif";
@@ -226,7 +226,7 @@ if (items != 0) {
 
     function deleteItem(elem, index, arr) {
         items.splice(index, 1);
-        localStorage.setItem("cartItems", JSON.stringify(items));
+        localStorage.setItem("cart_item", JSON.stringify(items));
         total -= arr[index] * elem.price;
         arr.splice(index, 1);
         localStorage.setItem("productCount", JSON.stringify(arr));
