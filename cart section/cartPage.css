@@ -171,7 +171,6 @@ button>a {
     display: flex;
     justify-content: space-around;
     width: 30%;
-    padding: 8px;
     color: #1f1c23;
 }
 
@@ -184,6 +183,5 @@ button>a {
     text-align: center;
     color: white;
     background-color: #1c1f23;
-    padding: 8px;
-    border-radius: 3px;
+    border-radius: 3.5px;
 }

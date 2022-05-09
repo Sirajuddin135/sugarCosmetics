@@ -30,7 +30,6 @@ if (items != 0) {
         var item = document.createElement("div");
         item.style.margin = "auto";
 
-
         // Product Image
         var image = document.createElement("img");
         image.setAttribute("src", elem.image);
@@ -213,6 +212,7 @@ if (items != 0) {
         document.querySelector("#ship").innerText = "₹ " + shipping + ".00";
         document.querySelector("#dis").innerText = "₹ " + discount + ".00";
         document.querySelector("#totalAmount").innerText = "₹ " + totalAmount + ".00";
+        document.querySelector("#final>a:nth-child(2)").innerText = "Proceed to Payment (Rs. " + totalAmount + ".00)";
     }
 
     function deleteItem(elem, index, arr) {
