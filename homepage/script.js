@@ -56,6 +56,7 @@ document.querySelector("#cross").addEventListener("click", myfunction);
     
   
  }
+  
 
 //  bottomjs part
    
