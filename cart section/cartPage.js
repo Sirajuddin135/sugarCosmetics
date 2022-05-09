@@ -19,7 +19,7 @@ userDetailArr.forEach(function (el) {
 
 var total = 0;
 
-var items = JSON.parse(localStorage.getItem("cartItems")) || [];
+var items = JSON.parse(localStorage.getItem("cart_item")) || [];
 
 var wishlistItems = JSON.parse(localStorage.getItem("wishItems")) || [];
 
@@ -226,7 +226,7 @@ if (items != 0) {
 
     function deleteItem(elem, index, arr) {
         items.splice(index, 1);
-        localStorage.setItem("cartItems", JSON.stringify(items));
+        localStorage.setItem("cart_item", JSON.stringify(items));
         total -= arr[index] * elem.price;
         arr.splice(index, 1);
         localStorage.setItem("productCount", JSON.stringify(arr));
