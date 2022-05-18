@@ -1,0 +1,176 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    margin:0;
+    padding: 0;
+    }
+    #container{
+    width:50%;
+    height:800px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://in.sugarcosmetics.com/Login_bg.svg");
+    }
+    #form{
+    padding:20px;
+    margin:0px 20px;
+    width:80%;
+    height:380px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    #image{
+    display: flex;
+    }
+    #image>img{
+    width:30px;
+    }
+    #image>p{
+        font-size: 25px;
+    }
+    #image+div{
+    display: flex;
+    align-items: center;
+    }
+    #image+div>input:not(:nth-child(12)){
+    height:20%;
+    width:5%;
+    border:0px;
+    border-bottom:1px solid black;
+    margin-left: 4px;
+    font-size: 30px;
+    text-align: center;
+    outline: none;
+    }
+
+    /* #image+div>button{
+    padding:10px 15px;
+    margin-left:10px;
+    background-color: rgba(68, 3, 13, 0.4);
+    border:0px;
+    color: aliceblue;
+    font-weight: 500;
+    } */
+
+    #image+div>input:nth-child(12){
+        padding:5px 20px;
+        text-align: left;
+        font-size: 16px;
+        background-color: rgba(68, 3, 13, 0.4);
+        border:0px;
+        color: aliceblue;
+        font-weight: 500;
+        }
+    #verify>input:not(:nth-child(5)){
+    height:30px;
+    width:5%;
+    border:1px solid rgb(108, 104, 104);
+    margin-left: 4px; 
+    font-size: 30px; 
+    text-align: center;
+    outline: none;
+    }
+    /* #verify>button{
+    margin-top: 15px;
+    padding:10px 45px;
+    margin-left:10px;
+    display: block;
+    background-color: rgba(235, 32, 66, 0.4);
+    border:0px;
+    color: aliceblue;
+    
+    } */
+#verifyBtn{
+    margin-top: 15px;
+    padding:10px 45px;
+    margin-left:10px;
+    display: block;
+    background-color: rgba(235, 32, 66, 0.4);
+    border:0px;
+    color: aliceblue; 
+}
+
+    #check{
+    display: flex;
+    align-items: center;
+    }
+    #form+p{
+        margin-top: 30px;
+    }
+    #container>p{
+        text-align: center;
+        margin-left: 20px;
+    }
+    a{
+        color:black;
+        font-weight: bold;
+    }
+    #container>h2{
+    margin: 5px 0px 5px 20px;    
+    color:white
+    }
+    #mob+p{
+      color:rgb(240, 10, 48)  
+    }
+    #agree{
+        font-size: 14px;
+    }
+    #account-detail{
+        width: 80%;
+        height:230px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,45px);
+        gap:10px;
+    }
+    #fname,#lname{
+        padding-left: 15px;
+        font-size: 18px;
+        border:0;
+        background-color: rgb(235, 235, 235); 
+    }
+    #email{
+        grid-area:2/1/3/3 ;
+        padding-left: 15px;
+        font-size: 18px;
+        border:0;
+        background-color: rgb(235, 235, 235);
+    }
+    #save{
+        grid-area:3/1/4/3;
+        font-size: 18px;
+        border:0;
+        background-color: rgba(244, 53, 136,0.5);
+        color:white;
+    }
+    @media all and (min-width:719px) and (max-width:1000px){
+        #container{
+            width:80%;
+            height:800px;
+            }
+            #form{
+                height:400px;
+                } 
+    }
+    @media all and (min-width:451px) and (max-width:718px){
+        #container{
+            width:100%;
+            height:800px;
+            }
+            #form{
+                height:400px;
+                } 
+    }
+    @media all and (min-width:180px) and (max-width:450px){
+        #container{
+            width:100%;
+            height:800px;
+            }
+            #form{
+                width:100%;
+                height:480px;
+                } 
+    }
+    
